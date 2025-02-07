@@ -17,14 +17,14 @@ class TAppTheme {
       brightness: Brightness.light,
       primaryColor: Colors.blue,
       scaffoldBackgroundColor: Colors.white,
-      textTheme: TTextTheme.lightTextTheme,
-      elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
-      outlinedButtonTheme: TOoutlinedButtonTheme.lightOutlinedButtonTheme,
-      inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
-      chipTheme: TChipTheme.lightChipTheme,
-      appBarTheme: TAppBarTheme.lightAppBarTheme,
-      checkboxTheme: TcheckboxTheme.lightCheckboxTheme,
-      bottomSheetTheme: TBottomSheetTheme.lightButtonSheetTheme);
+      textTheme: FTextTheme.lightTextTheme,
+      elevatedButtonTheme: FElevatedButtonTheme.lightElevatedButtonTheme,
+      outlinedButtonTheme: FOoutlinedButtonTheme.lightOutlinedButtonTheme,
+      inputDecorationTheme: FTextFormFieldTheme.lightInputDecorationTheme,
+      chipTheme: FChipTheme.lightChipTheme,
+      appBarTheme: FAppBarTheme.lightAppBarTheme,
+      checkboxTheme: FcheckboxTheme.lightCheckboxTheme,
+      bottomSheetTheme: FBottomSheetTheme.lightButtonSheetTheme);
 
   static ThemeData darkTheme = ThemeData(
       useMaterial3: true,
@@ -32,12 +32,12 @@ class TAppTheme {
       brightness: Brightness.dark,
       primaryColor: Colors.blue,
       scaffoldBackgroundColor: Colors.black,
-      textTheme: TTextTheme.darkTextTheme,
-      elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
-      outlinedButtonTheme: TOoutlinedButtonTheme.darkOutlinedButtonTheme,
-      inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
-      chipTheme: TChipTheme.darkChipTheme,
-      appBarTheme: TAppBarTheme.darkAppBarTheme,
-      checkboxTheme: TcheckboxTheme.darkCheckboxTheme,
-      bottomSheetTheme: TBottomSheetTheme.darkButtonSheetTheme);
+      textTheme: FTextTheme.darkTextTheme,
+      elevatedButtonTheme: FElevatedButtonTheme.darkElevatedButtonTheme,
+      outlinedButtonTheme: FOoutlinedButtonTheme.darkOutlinedButtonTheme,
+      inputDecorationTheme: FTextFormFieldTheme.darkInputDecorationTheme,
+      chipTheme: FChipTheme.darkChipTheme,
+      appBarTheme: FAppBarTheme.darkAppBarTheme,
+      checkboxTheme: FcheckboxTheme.darkCheckboxTheme,
+      bottomSheetTheme: FBottomSheetTheme.darkButtonSheetTheme);
 }

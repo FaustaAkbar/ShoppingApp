@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-class THttpHelper {
+class FHttpHelper {
   static const String _baseUrl = 'https://api.com';
 
 // Helper metod to make a GET request

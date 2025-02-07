@@ -4,9 +4,6 @@ import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-/**
- *  THIS IS SignUp PAGE
- */
 class SignUpForm extends StatelessWidget {
   const SignUpForm({
     super.key,
@@ -24,12 +21,12 @@ class SignUpForm extends StatelessWidget {
                 child: TextFormField(
                   expands: false,
                   decoration: const InputDecoration(
-                      labelText: TTexts.firstName,
+                      labelText: FTexts.firstName,
                       prefixIcon: Icon(Iconsax.user)),
                 ),
               ),
               const SizedBox(
-                width: TSizes.spaceBtwInputFields,
+                width: FSizes.spaceBtwInputFields,
               ),
 
               //------ Last Name Box ------
@@ -37,64 +34,64 @@ class SignUpForm extends StatelessWidget {
                 child: TextFormField(
                   expands: false,
                   decoration: const InputDecoration(
-                      labelText: TTexts.lastName,
+                      labelText: FTexts.lastName,
                       prefixIcon: Icon(Iconsax.user)),
                 ),
               ),
             ],
           ),
           const SizedBox(
-            height: TSizes.spaceBtwInputFields,
+            height: FSizes.spaceBtwInputFields,
           ),
 
           //------ User Name ------
           TextFormField(
             expands: false,
             decoration: const InputDecoration(
-                labelText: TTexts.username,
+                labelText: FTexts.username,
                 prefixIcon: Icon(Iconsax.user_edit)),
           ),
 
           const SizedBox(
-            height: TSizes.spaceBtwInputFields,
+            height: FSizes.spaceBtwInputFields,
           ),
 
           //------ Email ------
           TextFormField(
             expands: false,
             decoration: const InputDecoration(
-                labelText: TTexts.email, prefixIcon: Icon(Iconsax.direct)),
+                labelText: FTexts.email, prefixIcon: Icon(Iconsax.direct)),
           ),
           const SizedBox(
-            height: TSizes.spaceBtwInputFields,
+            height: FSizes.spaceBtwInputFields,
           ),
 
           //------ Phone Number ------
           TextFormField(
             expands: false,
             decoration: const InputDecoration(
-                labelText: TTexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
+                labelText: FTexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
           ),
           const SizedBox(
-            height: TSizes.spaceBtwInputFields,
+            height: FSizes.spaceBtwInputFields,
           ),
 
           //------ Password ------
           TextFormField(
             expands: false,
             decoration: const InputDecoration(
-                labelText: TTexts.password,
+                labelText: FTexts.password,
                 prefixIcon: Icon(Iconsax.password_check),
                 suffix: Icon(Iconsax.eye_slash)),
           ),
           const SizedBox(
-            height: TSizes.spaceBtwSections,
+            height: FSizes.spaceBtwSections,
           ),
 
           //------ Terms Condition Checkbox ------
-          const TTermsAndConditionCheckBox(),
+          const FTermsAndConditionCheckBox(),
           const SizedBox(
-            height: TSizes.spaceBtwSections,
+            height: FSizes.spaceBtwSections,
           ),
 
           //------ Sign Up Button ------
@@ -103,7 +100,7 @@ class SignUpForm extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {},
               child: const Text(
-                TTexts.createAccount,
+                FTexts.createAccount,
               ),
             ),
           )

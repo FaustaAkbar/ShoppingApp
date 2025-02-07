@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
-class THelperFunctions {
+class FHelperFunctions {
   static Color? getColor(String value) {
     if (value == 'Green') {
       return Colors.green;

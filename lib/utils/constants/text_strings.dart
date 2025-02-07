@@ -1,4 +1,4 @@
-class TTexts {
+class FTexts {
   // -- GLOBAL Texts
 
   // -- OnBoarding Texts

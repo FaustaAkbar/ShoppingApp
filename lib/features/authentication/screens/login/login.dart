@@ -8,6 +8,10 @@ import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+/*
+ *  THIS IS Login PAGE
+ */
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -16,25 +20,25 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: TSpacingStyle.paddingWithAppBarHeight,
+          padding: FSpacingStyle.paddingWithAppBarHeight,
           child: Column(
             children: [
-              // Logo and titla
-              TLoginHeader(),
+              //------ Logo and Title ------
+              FLoginHeader(),
 
-              // Form email end password
-              TLoginForm(),
+              //------ Form Email and Password ------
+              FLoginForm(),
 
-              // Divider
-              TFormDivider(
-                dividerText: TTexts.orSignUpWith.capitalize!,
+              //------ Divider ------
+              FFormDivider(
+                dividerText: FTexts.orSignUpWith.capitalize!,
               ),
               const SizedBox(
-                height: TSizes.spaceBtwSections,
+                height: FSizes.spaceBtwSections,
               ),
 
-              // Footer
-              TSocialButtons()
+              //------ Footer ------
+              FSocialButtons()
             ],
           ),
         ),

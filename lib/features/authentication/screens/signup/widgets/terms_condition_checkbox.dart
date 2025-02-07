@@ -4,14 +4,14 @@ import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TTermsAndConditionCheckBox extends StatelessWidget {
-  const TTermsAndConditionCheckBox({
+class FTermsAndConditionCheckBox extends StatelessWidget {
+  const FTermsAndConditionCheckBox({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = FHelperFunctions.isDarkMode(context);
     return Row(
       children: [
         SizedBox(
@@ -20,30 +20,30 @@ class TTermsAndConditionCheckBox extends StatelessWidget {
           child: Checkbox(value: true, onChanged: (value) {}),
         ),
         const SizedBox(
-          width: TSizes.spaceBtwItems,
+          width: FSizes.spaceBtwItems,
         ),
         Text.rich(
           TextSpan(
             children: [
               TextSpan(
-                  text: '${TTexts.iAgreeTo} ',
+                  text: '${FTexts.iAgreeTo} ',
                   style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
-                text: '${TTexts.privacyPolicy} ',
+                text: '${FTexts.privacyPolicy} ',
                 style: Theme.of(context).textTheme.bodyMedium!.apply(
-                    color: dark ? TColors.white : TColors.primary,
+                    color: dark ? FColors.white : FColors.primary,
                     decoration: TextDecoration.underline,
-                    decorationColor: dark ? TColors.white : TColors.primary),
+                    decorationColor: dark ? FColors.white : FColors.primary),
               ),
               TextSpan(
-                  text: '${TTexts.and} ',
+                  text: '${FTexts.and} ',
                   style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
-                  text: '${TTexts.termsOfUse} ',
+                  text: '${FTexts.termsOfUse} ',
                   style: Theme.of(context).textTheme.bodyMedium!.apply(
-                      color: dark ? TColors.white : TColors.primary,
+                      color: dark ? FColors.white : FColors.primary,
                       decoration: TextDecoration.underline,
-                      decorationColor: dark ? TColors.white : TColors.primary)),
+                      decorationColor: dark ? FColors.white : FColors.primary)),
             ],
           ),
         ),

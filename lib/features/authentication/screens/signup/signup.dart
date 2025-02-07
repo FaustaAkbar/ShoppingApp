@@ -6,6 +6,10 @@ import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+/*
+ *  THIS IS SignUp PAGE
+ */
+
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
 
@@ -16,36 +20,36 @@ class SignupScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(
-            TSizes.defaultSpace,
+            FSizes.defaultSpace,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //------ Title ------
               Text(
-                TTexts.signupTitle,
+                FTexts.signupTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               const SizedBox(
-                height: TSizes.spaceBtwSections,
+                height: FSizes.spaceBtwSections,
               ),
 
               //------ Form ------
               SignUpForm(),
               const SizedBox(
-                height: TSizes.spaceBtwSections,
+                height: FSizes.spaceBtwSections,
               ),
 
               //------ Divider ------
-              TFormDivider(dividerText: TTexts.orSignUpWith.capitalize!),
+              FFormDivider(dividerText: FTexts.orSignUpWith.capitalize!),
               const SizedBox(
-                height: TSizes.spaceBtwSections,
+                height: FSizes.spaceBtwSections,
               ),
 
               //------ Social Button ------
-              const TSocialButtons(),
+              const FSocialButtons(),
               const SizedBox(
-                height: TSizes.spaceBtwSections,
+                height: FSizes.spaceBtwSections,
               ),
             ],
           ),
