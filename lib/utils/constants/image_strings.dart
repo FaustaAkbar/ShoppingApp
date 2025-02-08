@@ -15,7 +15,7 @@ class FImages {
   static const String onBoradingImage3 =
       "assets/images/on_boarding_images/bag.png";
 
-  //Animations (hanya untuk sementara static dulu)
+  //Animations
   static const String deliveredEmailIlustration =
       "assets/images/animations/animation-email-sucsess.gif";
   static const String productsIllustration =
@@ -26,4 +26,8 @@ class FImages {
       "assets/images/animations/animation-delivered-plane.gif";
   static const String verifyIllustration =
       "assets/images/animations/animation-verified.gif";
+
+  // Category Icons
+  static const String jeansIcon =
+      "assets/icons/categories/icons-category-pants.png";
 }
