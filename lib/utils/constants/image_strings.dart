@@ -14,4 +14,16 @@ class FImages {
       "assets/images/on_boarding_images/point.png";
   static const String onBoradingImage3 =
       "assets/images/on_boarding_images/bag.png";
+
+  //Animations (hanya untuk sementara static dulu)
+  static const String deliveredEmailIlustration =
+      "assets/images/animations/animation-email-sucsess.gif";
+  static const String productsIllustration =
+      "assets/images/animations/animation-product.gif";
+  static const String productsSaleIllustration =
+      "assets/images/animations/animation-sale.gif";
+  static const String deliveredPlaneInIllustration =
+      "assets/images/animations/animation-delivered-plane.gif";
+  static const String verifyIllustration =
+      "assets/images/animations/animation-verified.gif";
 }

@@ -33,6 +33,7 @@ class FTexts {
   static const String orSignUpWith = "or sign up with";
   static const String iAgreeTo = "I agree to";
   static const String and = "and";
+  static const String fcontinue = "Continue";
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of use";
   static const String verificationCode = "Verification Code";
@@ -56,6 +57,8 @@ class FTexts {
       "Congratulations! Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
   static const String emailNotReceivedMessage =
       "Didn't get the email? Check your junk/spam or resend it.";
+
+  static const String yourAccountCreated = "Your account successfully created!";
   static const String yourAccountCreatedSubtitle =
       "Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
 }
