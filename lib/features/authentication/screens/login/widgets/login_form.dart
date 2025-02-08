@@ -1,3 +1,4 @@
+import 'package:ecommerce/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ecommerce/features/authentication/screens/signup/signup.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
@@ -17,6 +18,7 @@ class FLoginForm extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: FSizes.spaceBtwSections),
         child: Column(
           children: [
+            //------ Email ------
             TextFormField(
               decoration: InputDecoration(
                 prefixIcon: Icon(
@@ -28,6 +30,8 @@ class FLoginForm extends StatelessWidget {
             const SizedBox(
               height: FSizes.spaceBtwInputFields,
             ),
+
+            //------ Password ------
             TextFormField(
               decoration: InputDecoration(
                 prefixIcon: Icon(
@@ -40,17 +44,22 @@ class FLoginForm extends StatelessWidget {
             const SizedBox(
               height: FSizes.spaceBtwInputFields / 2,
             ),
+
+            //------ Remember Me and Forget Password ------
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                //------ Remember Me ------
                 Row(
                   children: [
                     Checkbox(value: true, onChanged: (value) {}),
                     const Text(FTexts.rememberMe),
                   ],
                 ),
+
+                //------ Forget Password ------
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgetPassword()),
                   child: const Text(
                     FTexts.forgetPassword,
                   ),
@@ -60,6 +69,8 @@ class FLoginForm extends StatelessWidget {
             const SizedBox(
               height: FSizes.spaceBtwSections,
             ),
+
+            //------ SignIn Buttons ------
             SizedBox(
               width: double.infinity,
               child:
@@ -69,7 +80,7 @@ class FLoginForm extends StatelessWidget {
               height: FSizes.spaceBtwItems,
             ),
 
-            // Create Account Button
+            //------ Create Account Buttons ------
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
