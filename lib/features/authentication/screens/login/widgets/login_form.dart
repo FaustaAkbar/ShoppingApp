@@ -1,5 +1,6 @@
 import 'package:ecommerce/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ecommerce/features/authentication/screens/signup/signup.dart';
+import 'package:ecommerce/navigation_menu.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -73,8 +74,9 @@ class FLoginForm extends StatelessWidget {
             //------ SignIn Buttons ------
             SizedBox(
               width: double.infinity,
-              child:
-                  ElevatedButton(onPressed: () {}, child: Text(FTexts.signIn)),
+              child: ElevatedButton(
+                  onPressed: () => Get.to(() => const NavigationMenu()),
+                  child: Text(FTexts.signIn)),
             ),
             const SizedBox(
               height: FSizes.spaceBtwItems,
