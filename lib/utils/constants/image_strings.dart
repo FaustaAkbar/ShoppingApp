@@ -30,4 +30,8 @@ class FImages {
   // Category Icons
   static const String jeansIcon =
       "assets/icons/categories/icons-category-pants.png";
+
+  // Banners
+  static const String bannersDiscount =
+      "assets/images/banners/banner-discount.jpg";
 }
