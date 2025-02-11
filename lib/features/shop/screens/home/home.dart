@@ -3,6 +3,7 @@ import 'package:ecommerce/common/widgets/custom_shapes/container/circular_contai
 import 'package:ecommerce/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/container/search_container.dart';
 import 'package:ecommerce/common/widgets/images/FRounded_image.dart';
+import 'package:ecommerce/common/widgets/products/products_cart/product_card_vertical.dart';
 import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_categories.dart';
@@ -65,14 +66,22 @@ class HomeScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(FSizes.defaultSpace),
-              child: FPromoSlider(
-                banners: [
-                  FImages.bannersDiscount,
-                  FImages.bannersDiscount,
-                  FImages.bannersDiscount,
+              child: Column(
+                children: [
+                  FPromoSlider(
+                    banners: [
+                      FImages.bannersDiscount,
+                      FImages.bannersDiscount,
+                      FImages.bannersDiscount,
+                    ],
+                  ),
+                  SizedBox(
+                    height: FSizes.spaceBtwSections,
+                  ),
+                  FProductCardVertical()
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

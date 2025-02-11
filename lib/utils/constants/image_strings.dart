@@ -34,4 +34,7 @@ class FImages {
   // Banners
   static const String bannersDiscount =
       "assets/images/banners/banner-discount.jpg";
+
+  // Products
+  static const String product = "assets/images/products/shoes-product.png";
 }
