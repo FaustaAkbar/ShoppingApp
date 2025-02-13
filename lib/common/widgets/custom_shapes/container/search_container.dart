@@ -11,18 +11,23 @@ import 'package:iconsax/iconsax.dart';
 
  */
 class FSearchContainer extends StatelessWidget {
-  const FSearchContainer(
-      {super.key,
-      required this.text,
-      this.icon = Iconsax.search_normal,
-      this.showBackground = true,
-      this.showBorder = true,
-      this.onTap});
+  const FSearchContainer({
+    super.key,
+    required this.text,
+    this.icon = Iconsax.search_normal,
+    this.showBackground = true,
+    this.showBorder = true,
+    this.onTap,
+    this.padding = const EdgeInsets.symmetric(
+      horizontal: FSizes.defaultSpace,
+    ),
+  });
 
   final String text;
   final IconData? icon;
   final bool showBackground, showBorder;
   final VoidCallback? onTap;
+  final EdgeInsetsGeometry padding;
   @override
   Widget build(BuildContext context) {
     final dark = FHelperFunctions.isDarkMode(context);
@@ -30,9 +35,7 @@ class FSearchContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: FSizes.defaultSpace,
-        ),
+        padding: padding,
         child: Container(
           width: FDeviceUtils.getScreenWidth(context),
           padding: const EdgeInsets.all(

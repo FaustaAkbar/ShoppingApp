@@ -3,17 +3,18 @@ import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class FRoundedContainer extends StatelessWidget {
-  const FRoundedContainer(
-      {super.key,
-      this.width,
-      this.height,
-      this.radius = FSizes.cardRadiusLg,
-      this.child,
-      this.showBorder = false,
-      this.borderColor = FColors.borderPrimary,
-      this.backgroundColor = FColors.white,
-      this.padding,
-      this.margin});
+  const FRoundedContainer({
+    super.key,
+    this.width,
+    this.height,
+    this.radius = FSizes.cardRadiusLg,
+    this.child,
+    this.showBorder = false,
+    this.borderColor = FColors.borderPrimary,
+    this.backgroundColor = FColors.white,
+    this.padding,
+    this.margin,
+  });
 
   final double? width;
   final double? height;
@@ -36,6 +37,7 @@ class FRoundedContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(radius),
         border: showBorder ? Border.all(color: borderColor) : null,
       ),
+      child: child,
     );
   }
 }

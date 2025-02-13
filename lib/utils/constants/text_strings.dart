@@ -15,7 +15,7 @@ class FTexts {
 
   // -- Home
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Taimoor Sikander";
+  static const String homeAppbarSubTitle = "Fausta Akbar";
 
   // -- Authentication Form Text
   static const String firstName = "First Name";

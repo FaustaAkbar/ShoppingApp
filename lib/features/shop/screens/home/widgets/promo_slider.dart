@@ -3,7 +3,6 @@ import 'package:ecommerce/common/widgets/custom_shapes/container/circular_contai
 import 'package:ecommerce/common/widgets/images/FRounded_image.dart';
 import 'package:ecommerce/features/shop/controllers/home_controller.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
-import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

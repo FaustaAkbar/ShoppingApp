@@ -6,7 +6,7 @@ class FCartCounterIcon extends StatelessWidget {
   const FCartCounterIcon({
     super.key,
     required this.onPressed,
-    required this.iconColor,
+    this.iconColor = FColors.white,
   });
   final VoidCallback onPressed;
   final Color iconColor;
