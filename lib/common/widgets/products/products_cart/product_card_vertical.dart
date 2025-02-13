@@ -1,5 +1,4 @@
 import 'package:ecommerce/common/styles/shadows.dart';
-import 'package:ecommerce/common/widgets/custom_shapes/container/circular_container.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:ecommerce/common/widgets/icons/f_circular_icon.dart';
 import 'package:ecommerce/common/widgets/images/FRounded_image.dart';
